@@ -17,9 +17,6 @@ interface ResponseData {
 
 const Dashboard = async () => {
   const data = (await getCodingStats()) as ResponseData;
-  const started = data.data.human_readable_range;
-  const totalTime = data.data.human_readable_total_including_other_language;
-  const languages: LanguagesType[] = data.data.languages;
 
   if (!data || data.error) {
     return (
@@ -35,6 +32,11 @@ const Dashboard = async () => {
       </main>
     );
   }
+
+  const started = data.data.human_readable_range;
+  const totalTime = data.data.human_readable_total_including_other_language;
+  const languages: LanguagesType[] = data.data.languages;
+
   return (
     <main className="items-center px-4 py-8">
       <div className="space-y-4">
@@ -44,11 +46,11 @@ const Dashboard = async () => {
         <div className="flex flex-wrap gap-2">
           <DiscordCard />
           <CodeTime
-            started={data?.data.human_readable_range}
-            totalTime={data?.data.human_readable_total_including_other_language}
-            languages={data?.data.languages}
+            started={started}
+            totalTime={totalTime}
+            languages={languages}
           />
-          <Languages languages={data?.data.languages} />
+          <Languages languages={languages} />
         </div>
       </div>
     </main>
