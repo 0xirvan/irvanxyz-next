@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Please make the following changes:
 
-- Rename `env.example` file to `.env`.
+- Rename or copy `env.example` file to `.env`.
 - Fill the `.env` file with your environment variables.
 - Modify `config/siteConfig.ts`.
 
