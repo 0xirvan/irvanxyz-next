@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="light">
           <div className="flex min-h-screen flex-col px-4 py-4 md:container md:w-[45rem] md:px-0 md:py-8">
             <Navbar />
             {children}
