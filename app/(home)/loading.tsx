@@ -22,7 +22,7 @@ const loading = () => {
           <a
             target="_blank"
             href={`${siteConfig.links.github}?tab=repositories`}
-            className="px-4 text-sm underline"
+            className="px-4 text-sm underline dark:text-green-300"
           >
             See More...
           </a>
