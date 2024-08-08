@@ -7,7 +7,7 @@ const api = wretch("https://api.lanyard.rest", { cache: "no-store" })
 
 export const getDiscordActivity = async () => {
   try {
-    return await api.get(`/v1/users/${env.DISCORD_ID}`);
+    return await api.get(`/v1/users/${env.NEXT_PUBLIC_DISCORD_ID}`);
   } catch (error) {
     console.error("Error fetching data:", error);
     return { error: "Failed fetching data" };
