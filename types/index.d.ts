@@ -10,3 +10,14 @@ export type SiteConfig = {
     twitter: string;
   };
 };
+
+//Github
+export type GithubRepo = {
+  repo: string;
+  description: string;
+  language: string;
+  languageColor: string;
+  stars: number;
+  link: string;
+  website: string;
+};
