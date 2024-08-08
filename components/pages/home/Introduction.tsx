@@ -12,6 +12,10 @@ export const Introduction = () => {
       </p>
       <p className="font-light">
         My favorite tech stack for building web apps includes{" "}
+        <a href="https://nextjs.org/" target="_blank" className="font-semibold">
+          Nextjs
+        </a>
+        ,{" "}
         <a href="https://react.dev/" target="_blank" className="font-semibold">
           React
         </a>
