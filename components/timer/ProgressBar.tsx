@@ -1,3 +1,5 @@
+"use client";
+
 import { calculateProgress } from "@/lib/time";
 import { Progress } from "@/components/ui/progress";
 import { useState, useEffect } from "react";

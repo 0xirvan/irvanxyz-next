@@ -1,3 +1,4 @@
+"use client";
 import { discordTimestamp } from "@/lib/time";
 import { useEffect, useState } from "react";
 
