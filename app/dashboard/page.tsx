@@ -5,6 +5,7 @@ import { Languages } from "@/components/pages/dashboard/Languages";
 import { DiscordCard } from "@/components/pages/dashboard/discord/DiscordCard";
 import { DashboardSkeleton } from "@/components/skeleton/DashboardSkeleton";
 import { CodeTime } from "@/components/pages/dashboard/CodeTime";
+import { Metadata } from "next";
 
 interface ResponseData {
   data: {
@@ -14,6 +15,10 @@ interface ResponseData {
   };
   error?: string;
 }
+
+export const metadata: Metadata = {
+  title: "Dashboard",
+};
 
 const Dashboard = async () => {
   const data = (await getCodingStats()) as ResponseData;

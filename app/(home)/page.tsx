@@ -6,8 +6,13 @@ import { SocialMediaIcons } from "@/components/pages/home/SocialMediaIcons";
 import { ProjectCard } from "@/components/pages/home/ProjectCard";
 import { ProjectSkeleton } from "@/components/skeleton/ProjectSkeleton";
 import { getRepo } from "@/lib/api/github";
+import { Metadata } from "next";
 
 type RepoData = GithubRepo[] | { error: string };
+
+export const metadata: Metadata = {
+  title: "Home",
+};
 
 const Home = async () => {
   const data = (await getRepo()) as RepoData;

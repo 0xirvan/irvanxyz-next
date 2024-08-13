@@ -9,7 +9,10 @@ import { siteConfig } from "@/config/siteConfig";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Irvan pramana",
+  title: {
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.title}`,
+  },
   description: siteConfig.description,
   keywords: [
     "Irvan pramana",
