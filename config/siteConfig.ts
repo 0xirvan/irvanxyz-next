@@ -2,6 +2,7 @@ import { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
   name: "irvan",
+  title: "Irvan Pramana",
   description: "Irvan's personal website",
   links: {
     github: "https://github.com/0x476569636f",
