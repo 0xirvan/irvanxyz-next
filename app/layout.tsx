@@ -15,20 +15,24 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "Irvan pramana",
     "Irvan",
-    "Pramana",
-    "Irvan Pramana",
-    "irvan.xyz",
+    "Irvan pramana",
     "irvanpramana",
+    "irvan pramana putra",
     "irvan .xyz",
     "0x476569636f",
-    "irvanberuq",
-    "Portfolio",
-    "Portfolio Irvan Pramana",
-    "Portfolio Irvan",
-    "irvan pramana putra",
   ],
+  robots: "follow, index",
+  applicationName: siteConfig.title,
+  authors: [{ name: "Irvan Pramana Putra" }],
+  creator: "Irvan Pramana Putra",
+  publisher: "Irvan Pramana Putra",
+  openGraph: {
+    type: "website",
+    url: "https://irvan.xyz",
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
 };
 
 export default function RootLayout({
