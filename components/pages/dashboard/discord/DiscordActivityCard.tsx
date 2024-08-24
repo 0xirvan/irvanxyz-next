@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/tooltip";
 import { ElapsedTime } from "@/components/timer/ElapsedTime";
 import { ProgressBar } from "@/components/timer/ProgressBar";
-import Image from "next/image";
 
 interface DiscordActivityCardProps {
   activity: Activity;
@@ -28,31 +27,28 @@ export const DiscordActivityCard = ({
             {activity.assets &&
             activity.assets.large_image &&
             activity.assets.large_image.startsWith("spotify:") ? (
-              <Image
+              <img
                 src={data.data.spotify.album_art_url}
                 width={90}
                 height={90}
                 alt="Activity image"
                 className="rounded"
-                quality={100}
               />
             ) : activity.assets && activity.application_id ? (
-              <Image
+              <img
                 src={`https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets.large_image}.webp?size=512`}
                 width={90}
                 height={90}
                 alt="Activity image"
                 className="rounded"
-                quality={100}
               />
             ) : activity.application_id ? (
-              <Image
+              <img
                 src={`https://dcdn.dstn.to/app-icons/${activity.application_id}.webp?size=512`}
                 width={90}
                 height={90}
                 alt="Activity image"
                 className="rounded"
-                quality={100}
               />
             ) : (
               <div
