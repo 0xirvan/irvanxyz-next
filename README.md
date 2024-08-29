@@ -4,6 +4,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Please make the following changes:
 
+- Install all dependencies using ur fav package manager
+```bash
+npm i
+# or
+yarn i
+# or
+pnpm i
+# or
+bun i
+```
 - Rename or copy `env.example` file to `.env`.
 - Fill the `.env` file with your environment variables.
 - Modify `config/siteConfig.ts`.
